@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  prbot:
+    build: .
+    command: npm run start
+    volumes:
+      - ./dist:/server/dist
+      - ./dangerfile.ts:/server/dangerfile.ts
+    ports:
+      - "8781:8080"
+    environment:
+      - GITHUB_TOKEN=[TOKEN]
+      - NODE_TLS_REJECT_UNAUTHORIZED=0

@@ -1,0 +1,31 @@
+{
+  "name": "dangerjs-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/darkcl/dangerjs-bot.git",
+  "author": "Yeung Yiu Hung <hkclex@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "start": "node ./dist/server.js",
+    "danger": "danger ci"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.12",
+    "@octokit/rest": "^16.1.0",
+    "@octokit/webhooks": "^5.0.2",
+    "danger": "^6.0.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "npm-run": "^5.0.1",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/lodash": "^4.14.119",
+    "prettier": "^1.14.2",
+    "smee-client": "^1.0.2"
+  }
+}

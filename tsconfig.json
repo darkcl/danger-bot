@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "baseUrl": "./",
+    "allowJs": true
+  },
+  "compileOnSave": false,
+  "include": ["app/**/*"],
+  "exclude": ["node_modules"]
+}
